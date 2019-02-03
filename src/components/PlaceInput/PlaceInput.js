@@ -6,12 +6,14 @@ class PlaceInput extends Component {
     placeName: ""
   };
 
+  //this function for handling changes of the states  
   placeNameChangedHandler = val => {
     this.setState({
       placeName: val
     });
   };
 
+  //this function for handling the submit 
   placeSubmitHandler = () => {
     if (this.state.placeName.trim() === "") {
       return;
